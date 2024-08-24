@@ -1,9 +1,12 @@
 import { Module } from "@nestjs/common";
 
+import { PrismaModule } from "src/common/modules";
+
 import { CompanyController } from "./company.controller";
 import { CompanyService } from "./company.service";
 
 @Module({
+  imports: [PrismaModule],
   controllers: [CompanyController],
   providers: [CompanyService],
 })
