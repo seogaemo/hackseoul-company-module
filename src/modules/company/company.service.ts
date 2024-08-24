@@ -43,6 +43,17 @@ export class CompanyService {
       });
     }
 
-    return res;
+    return {
+      uid: res.uid,
+      name: res.name,
+      owner: res.owner,
+      ownerPhoto: "",
+      phone: res.phone,
+      email: res.email,
+      address: res.address,
+      licenseNumber: res.licenseNumber,
+      businessNumber: res.businessNumber,
+      type: res.type,
+    };
   }
 }
