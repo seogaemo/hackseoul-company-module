@@ -54,6 +54,7 @@ export class CompanyService {
       licenseNumber: res.licenseNumber,
       businessNumber: res.businessNumber,
       type: res.type,
+      userId: res.userId!,
     };
   }
 }
